@@ -41,17 +41,8 @@ Currently studying offensive security fundamentals, reverse engineering, and exp
 
     ---
 
-    ## Currently Learning
+    <div align="center">
 
-    - Pre-Security Path — TryHackMe
-    - - Binary exploitation & buffer overflows
-      - - Network protocol analysis
-        - - Reverse engineering (IL2CPP / native binaries)
-         
-          - ---
+    *Building real competence, not surface-level motivation.*
 
-          <div align="center">
-
-          *Building real competence, not surface-level motivation.*
-
-          </div>
+    </div>
