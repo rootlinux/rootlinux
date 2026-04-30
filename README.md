@@ -43,23 +43,15 @@ Currently studying offensive security fundamentals, reverse engineering, and exp
 
     ## Currently Learning
 
-    - [ ] Binary exploitation & buffer overflows
-    - [ ] - [ ] Network protocol analysis
-    - [ ] - [ ] Reverse engineering (IL2CPP / native binaries)
-    - [ ] - [ ] CTF — TryHackMe / HackTheBox
-   
-    - [ ] ---
-   
-    - [ ] ## Projects
-   
-    - [ ] | Repo | Description |
-    - [ ] |------|-------------|
-    - [ ] | [whatsapp-extractor](https://github.com/rootlinux/whatsapp-extractor) | Data extraction tool for security research |
-   
-    - [ ] ---
-   
-    - [ ] <div align="center">
+    - Pre-Security Path — TryHackMe
+    - - Binary exploitation & buffer overflows
+      - - Network protocol analysis
+        - - Reverse engineering (IL2CPP / native binaries)
+         
+          - ---
 
-    *Building real competence, not surface-level motivation.*
+          <div align="center">
 
-    </div>
+          *Building real competence, not surface-level motivation.*
+
+          </div>
