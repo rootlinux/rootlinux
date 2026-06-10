@@ -2,47 +2,38 @@
 
 # rootlinux
 
-**Computer Engineering Student · Offensive Security · Red Team**
+**Computer Engineering Student · Security Engineering → Red Team**
 
-[![](https://img.shields.io/badge/Focus-Red%20Team%20%2F%20Pentest-red?style=flat-square&logo=target)](https://github.com/rootlinux)
-[![](https://img.shields.io/badge/OS-Linux-informational?style=flat-square&logo=linux&logoColor=white)](https://github.com/rootlinux)
-[![](https://img.shields.io/badge/Location-Istanbul%2C%20Turkey-informational?style=flat-square)](https://github.com/rootlinux)
+[![Focus](https://img.shields.io/badge/Focus-Offensive%20Security-red?style=flat-square)](https://github.com/rootlinux)
+[![OS](https://img.shields.io/badge/OS-Linux-informational?style=flat-square&logo=linux&logoColor=white)](https://github.com/rootlinux)
+[![Location](https://img.shields.io/badge/Location-Istanbul%2C%20Turkey-informational?style=flat-square)](https://github.com/rootlinux)
 
 </div>
 
----
-
 ## About
 
-Security-focused computer engineering student building toward elite Red Team capability.
-Currently studying offensive security fundamentals, reverse engineering, and exploit development.
+Computer engineering student on a deliberate path toward Red Team / Pentest capability.
 
-- Studying **offensive security**, network protocols, and low-level exploitation
-- - Interested in **binary exploitation**, **C++ tooling**, and **malware analysis**
-  - - Building skills toward a Red Team / Pentest role
-   
-    - ---
+- Building and hardening real systems first — auth flows, session management, rate limiting, WebAuthn/MFA — to understand what attackers break
+- Studying offensive security fundamentals: network protocols, low-level exploitation, reverse engineering
+- Long-term focus: binary exploitation, C/C++ tooling, malware analysis
 
-    ## Tech Stack
+## Current Work
 
-    **Languages**
+| Project | What it is | Security angle |
+|---------|-----------|----------------|
+| [nexus](https://github.com/rootlinux/nexus) | Full-stack invite-only social platform (FastAPI + Next.js) | WebAuthn, MFA enforcement, session hardening, rate limiting, 40+ security-focused tests |
 
-    ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-    ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-    ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
-    ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+## Tech Stack
 
-    **Security & Tools**
+**Languages:** Python · C/C++ · TypeScript · Bash
 
-    ![Kali Linux](https://img.shields.io/badge/Kali_Linux-268BEE?style=flat-square&logo=kali-linux&logoColor=white)
-    ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-    ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-    ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burp-suite&logoColor=white)
+**Backend:** FastAPI · PostgreSQL · Redis · SQLAlchemy/Alembic · Docker
 
-    ---
+**Security & Tooling:** Kali Linux · Wireshark · Burp Suite · Metasploit
 
-    <div align="center">
+<div align="center">
 
-    *Building real competence, not surface-level motivation.*
+*Building real competence, not surface-level motivation.*
 
-    </div>
+</div>
