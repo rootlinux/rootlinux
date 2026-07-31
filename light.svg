@@ -5,11 +5,6 @@
     <clipPath id="leftClip"><rect x="24" y="24" width="448" height="562" rx="20"/></clipPath>
     <clipPath id="termClip"><rect x="496" y="24" width="660" height="562" rx="16"/></clipPath>
 
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
     <filter id="glowSoft" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="1.1" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -107,11 +102,11 @@
   <circle cx="230" cy="320" r="150" fill="url(#blobCyan)"><animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/></circle>
   <circle cx="266" cy="320" r="150" fill="url(#blobPurple)"><animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite" begin="0.5s"/></circle>
 
-  <text x="248" y="88" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="13" fill="#475569" opacity="0">guest@rootlinux:~$ sudo whoami
-    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.1s" fill="freeze"/>
+  <text x="248" y="88" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="13" fill="#475569">guest@rootlinux:~$ sudo whoami
+    
   </text>
-  <text x="248" y="110" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="14" font-weight="700" fill="#2563EB" opacity="0">root. don&#8217;t ask how.
-    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.5s" fill="freeze"/>
+  <text x="248" y="110" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="14" font-weight="700" fill="#2563EB">root. don&#8217;t ask how.
+    
   </text>
 
   <g id="tuxFloat" font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" text-anchor="middle">
@@ -119,51 +114,51 @@
 
     <!-- body -->
     <g fill="url(#asciiGradient)" filter="url(#glowSoft)">
-      <text xml:space="preserve" x="248" y="140.0" opacity="0">              ...              <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.85s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="153.2" opacity="0">             :::::             <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.9s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="166.4" opacity="0">          @@@@@@@@@@@          <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.95s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="179.6" opacity="0">        @@@@@@@@@@@@@@@        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.0s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="192.8" opacity="0">       @@@           @@@       <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.05s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="206.0" opacity="0">      @@@   @@@ @@@   @@@      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.1s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="219.2" opacity="0">      @@    @o@ @o@    @@      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.15s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="232.4" opacity="0">      @@    @@@ @@@    @@      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="245.6" opacity="0">      @@               @@      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.25s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="258.8" opacity="0">      @@@             @@@      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.3s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="272.0" opacity="0">       @@@           @@@       <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.35s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="285.2" opacity="0">       @@@@         @@@@       <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.4s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="298.4" opacity="0">      @@@@           @@@@      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.45s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="311.6" opacity="0">     @@@@             @@@@     <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="324.8" opacity="0">    @@@@               @@@@    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.55s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="338.0" opacity="0">   @@@@                 @@@@   <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.6s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="351.2" opacity="0">  @@@@                   @@@@  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.65s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="364.4" opacity="0">  @@@@                   @@@@  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.7s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="377.6" opacity="0"> @@@@                     @@@@ <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.75s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="390.8" opacity="0"> @@@@                     @@@@ <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="404.0" opacity="0"> @@@@                     @@@@ <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.85s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="417.2" opacity="0">  @@@@                   @@@@  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.9s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="430.4" opacity="0">  @@@@@                 @@@@@  <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.95s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="443.6" opacity="0">   @@@@@@             @@@@@@   <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.0s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="456.8" opacity="0">    @@@@@@@@       @@@@@@@@    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.05s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="470.0" opacity="0">       @@@@@@@@@@@@@@@@@       <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.1s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="483.2" opacity="0">          @@@@@@@@@@@          <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.15s" fill="freeze"/></text>
+      <text xml:space="preserve" x="248" y="140.0">              ...              </text>
+      <text xml:space="preserve" x="248" y="153.2">             :::::             </text>
+      <text xml:space="preserve" x="248" y="166.4">          @@@@@@@@@@@          </text>
+      <text xml:space="preserve" x="248" y="179.6">        @@@@@@@@@@@@@@@        </text>
+      <text xml:space="preserve" x="248" y="192.8">       @@@           @@@       </text>
+      <text xml:space="preserve" x="248" y="206.0">      @@@   @@@ @@@   @@@      </text>
+      <text xml:space="preserve" x="248" y="219.2">      @@    @o@ @o@    @@      </text>
+      <text xml:space="preserve" x="248" y="232.4">      @@    @@@ @@@    @@      </text>
+      <text xml:space="preserve" x="248" y="245.6">      @@               @@      </text>
+      <text xml:space="preserve" x="248" y="258.8">      @@@             @@@      </text>
+      <text xml:space="preserve" x="248" y="272.0">       @@@           @@@       </text>
+      <text xml:space="preserve" x="248" y="285.2">       @@@@         @@@@       </text>
+      <text xml:space="preserve" x="248" y="298.4">      @@@@           @@@@      </text>
+      <text xml:space="preserve" x="248" y="311.6">     @@@@             @@@@     </text>
+      <text xml:space="preserve" x="248" y="324.8">    @@@@               @@@@    </text>
+      <text xml:space="preserve" x="248" y="338.0">   @@@@                 @@@@   </text>
+      <text xml:space="preserve" x="248" y="351.2">  @@@@                   @@@@  </text>
+      <text xml:space="preserve" x="248" y="364.4">  @@@@                   @@@@  </text>
+      <text xml:space="preserve" x="248" y="377.6"> @@@@                     @@@@ </text>
+      <text xml:space="preserve" x="248" y="390.8"> @@@@                     @@@@ </text>
+      <text xml:space="preserve" x="248" y="404.0"> @@@@                     @@@@ </text>
+      <text xml:space="preserve" x="248" y="417.2">  @@@@                   @@@@  </text>
+      <text xml:space="preserve" x="248" y="430.4">  @@@@@                 @@@@@  </text>
+      <text xml:space="preserve" x="248" y="443.6">   @@@@@@             @@@@@@   </text>
+      <text xml:space="preserve" x="248" y="456.8">    @@@@@@@@       @@@@@@@@    </text>
+      <text xml:space="preserve" x="248" y="470.0">       @@@@@@@@@@@@@@@@@       </text>
+      <text xml:space="preserve" x="248" y="483.2">          @@@@@@@@@@@          </text>
     </g>
 
     <!-- beak + feet, painted on the same character grid -->
     <g fill="#F59E0B" filter="url(#glowSoft)">
-      <text xml:space="preserve" x="248" y="258.8" opacity="0">            ooooooo            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.3s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="272.0" opacity="0">             ooooo             <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.35s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="470.0" opacity="0">%%%%                      %%%%<animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.1s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="483.2" opacity="0">%%%%%%%                %%%%%%%<animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.15s" fill="freeze"/></text>
-      <text xml:space="preserve" x="248" y="496.4" opacity="0">%%%%%%%%               %%%%%%%%<animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/></text>
+      <text xml:space="preserve" x="248" y="258.8">            ooooooo            </text>
+      <text xml:space="preserve" x="248" y="272.0">             ooooo             </text>
+      <text xml:space="preserve" x="248" y="470.0">%%%%                      %%%%</text>
+      <text xml:space="preserve" x="248" y="483.2">%%%%%%%                %%%%%%%</text>
+      <text xml:space="preserve" x="248" y="496.4">%%%%%%%%               %%%%%%%%</text>
     </g>
   </g>
 
-  <text x="248" y="516" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="15" fill="#2563EB" opacity="0">
-    <animate attributeName="opacity" values="0;1" begin="2.4s" dur="0.01s" fill="freeze"/>
+  <text x="248" y="516" text-anchor="middle" font-family="'SFMono-Regular',Consolas,monospace" font-size="15" fill="#2563EB">
+    
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="2.4s"/>&#9612;</text>
 
-  <text x="248" y="552" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,sans-serif" font-size="12" font-style="italic" fill="#475569" opacity="0">Everything real starts at the root.
-    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="2.6s" fill="freeze"/>
+  <text x="248" y="552" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,sans-serif" font-size="12" font-style="italic" fill="#475569">Everything real starts at the root.
+    
   </text>
 
   <!-- RIGHT: terminal panel -->
@@ -178,141 +173,129 @@
   <rect x="496" y="24" width="660" height="562" rx="16" fill="none" stroke="#0F172A" stroke-opacity="0.10"/>
 
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,sans-serif">
-    <text x="524" y="104" font-size="26" font-weight="700" fill="#0F172A" opacity="0">Hi &#128075; I&#8217;m Berke
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.4s" fill="freeze"/>
+    <text x="524" y="104" font-size="26" font-weight="700" fill="#0F172A">Hi &#128075; I&#8217;m Berke
+      
     </text>
 
-    <!-- rotating role clips -->
-    <clipPath id="roleClip1"><rect x="524" y="130" width="0" height="26"><animate id="r1w" attributeName="width" from="0" to="320" dur="1.3s" begin="0.6s;r3d.end+0.15s" fill="freeze"/><animate id="r1d" attributeName="width" from="320" to="0" dur="0.45s" begin="r1w.end+1.2s" fill="freeze"/></rect></clipPath>
-    <clipPath id="roleClip2"><rect x="524" y="130" width="0" height="26"><animate id="r2w" attributeName="width" from="0" to="320" dur="1.3s" begin="r1d.end+0.15s" fill="freeze"/><animate id="r2d" attributeName="width" from="320" to="0" dur="0.45s" begin="r2w.end+1.2s" fill="freeze"/></rect></clipPath>
-    <clipPath id="roleClip3"><rect x="524" y="130" width="0" height="26"><animate id="r3w" attributeName="width" from="0" to="220" dur="0.9s" begin="r2d.end+0.15s" fill="freeze"/><animate id="r3d" attributeName="width" from="220" to="0" dur="0.45s" begin="r3w.end+1.2s" fill="freeze"/></rect></clipPath>
-
+    <!-- role rotation: opacity crossfade. Role 1 has no opacity attribute,
+         so if SMIL never starts it stays visible on its own. -->
     <g font-size="20" font-weight="500" fill="#2563EB">
-      <text x="524" y="148" clip-path="url(#roleClip1)">Computer Engineering Student</text>
-      <text x="524" y="148" clip-path="url(#roleClip2)">Offensive Security &amp; Red Team</text>
-      <text x="524" y="148" clip-path="url(#roleClip3)">Full-Stack Developer</text>
+      <text x="524" y="148">Computer Engineering Student<tspan dx="6">&#9612;<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></tspan><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.31;0.35;0.96;1" dur="9s" repeatCount="indefinite"/></text>
+      <text x="524" y="148" opacity="0">Offensive Security &amp; Red Team<tspan dx="6">&#9612;<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></tspan><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.31;0.35;0.64;0.68;1" dur="9s" repeatCount="indefinite"/></text>
+      <text x="524" y="148" opacity="0">Full-Stack Developer<tspan dx="6">&#9612;<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></tspan><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.64;0.68;0.96;1" dur="9s" repeatCount="indefinite"/></text>
     </g>
 
-    <rect y="130" width="3" height="22" fill="#2563EB">
-      <animate attributeName="x" from="524" to="844" dur="1.3s" begin="0.6s;r3d.end+0.15s" fill="freeze"/>
-      <animate attributeName="x" from="844" to="524" dur="0.45s" begin="r1w.end+1.2s" fill="freeze"/>
-      <animate attributeName="x" from="524" to="844" dur="1.3s" begin="r1d.end+0.15s" fill="freeze"/>
-      <animate attributeName="x" from="844" to="524" dur="0.45s" begin="r2w.end+1.2s" fill="freeze"/>
-      <animate attributeName="x" from="524" to="744" dur="0.9s" begin="r2d.end+0.15s" fill="freeze"/>
-      <animate attributeName="x" from="744" to="524" dur="0.45s" begin="r3w.end+1.2s" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- meta rows: vector icons, no emoji -->
     <g font-size="15" fill="#475569">
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.0s" fill="freeze"/>
-        <g transform="translate(524,184)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M8 15s5.5-5 5.5-8.6A5.5 5.5 0 0 0 2.5 6.4C2.5 10 8 15 8 15z"/>
-          <circle cx="8" cy="6.3" r="2"/>
-        </g>
-        <text x="550" y="196">Istanbul, Turkey</text>
+      <g>
+        <g transform="translate(524,178)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 15s5.5-5 5.5-8.6A5.5 5.5 0 0 0 2.5 6.4C2.5 10 8 15 8 15z"/><circle cx="8" cy="6.3" r="2"/></g>
+        <text x="550" y="190">Istanbul, Turkey</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.3s" fill="freeze"/>
-        <g transform="translate(524,216)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M1.5 5.8 8 2.8l6.5 3L8 8.8 1.5 5.8z"/>
-          <path d="M4.2 7.2v3.6c0 1.1 1.7 1.9 3.8 1.9s3.8-.8 3.8-1.9V7.2"/>
-        </g>
-        <text x="550" y="228">Computer Engineering</text>
+      <g>
+        <g transform="translate(524,204)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5.8 8 2.8l6.5 3L8 8.8 1.5 5.8z"/><path d="M4.2 7.2v3.6c0 1.1 1.7 1.9 3.8 1.9s3.8-.8 3.8-1.9V7.2"/></g>
+        <text x="550" y="216">Computer Engineering</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.6s" fill="freeze"/>
-        <g transform="translate(524,248)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="8" cy="8" r="5.8"/>
-          <circle cx="8" cy="8" r="1.9"/>
-        </g>
-        <text x="550" y="260">Building iceq &#8212; E2EE messenger w/ panic-wipe security</text>
+      <g>
+        <g transform="translate(524,230)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5.8"/><circle cx="8" cy="8" r="1.9"/></g>
+        <text x="550" y="242">Building iceq &#8212; E2EE messenger w/ panic-wipe security</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.9s" fill="freeze"/>
-        <g transform="translate(524,280)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="1.6" y="3.6" width="12.8" height="9.2" rx="1.8"/>
-          <path d="M2.2 4.8 8 9l5.8-4.2"/>
-        </g>
-        <text x="550" y="292">berkeesahin@proton.me</text>
+      <g>
+        <g transform="translate(524,256)" stroke="#2563EB" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="1.6" y="3.6" width="12.8" height="9.2" rx="1.8"/><path d="M2.2 4.8 8 9l5.8-4.2"/></g>
+        <text x="550" y="268">berkeesahin@proton.me</text>
       </g>
     </g>
 
-    <text x="524" y="336" font-size="12" letter-spacing="2" fill="#475569" opacity="0">SKILLS<animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.2s" fill="freeze"/></text>
-
-    <!-- skill pills -->
-    <g font-size="12.5" fill="#0F172A">
-      <!-- row 1 -->
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.30s" fill="freeze"/>
-        <rect x="520" y="330" width="78" height="34" rx="19" fill="#2563EB" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3s" repeatCount="indefinite"/></rect>
-        <rect x="524" y="334" width="70" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="559" y="354" text-anchor="middle">Python</text>
+    <text x="524" y="296" font-size="10" letter-spacing="2" fill="#475569">LANGUAGES</text>
+      <g>
+        <rect x="520" y="304" width="82" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="536" cy="319" r="4" fill="#3776AB"/>
+        <text x="548" y="324" font-size="12.5" fill="#0F172A">Python</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.38s" fill="freeze"/>
-        <rect x="598" y="330" width="72" height="34" rx="19" fill="#06B6D4" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.2s" repeatCount="indefinite" begin="0.2s"/></rect>
-        <rect x="602" y="334" width="64" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="634" y="354" text-anchor="middle">C/C++</text>
+      <g>
+        <rect x="610" y="304" width="76" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="626" cy="319" r="4" fill="#00599C"/>
+        <text x="638" y="324" font-size="12.5" fill="#0F172A">C/C++</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.46s" fill="freeze"/>
-        <rect x="670" y="330" width="104" height="34" rx="19" fill="#2563EB" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="2.8s" repeatCount="indefinite" begin="0.4s"/></rect>
-        <rect x="674" y="334" width="96" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="722" y="354" text-anchor="middle">TypeScript</text>
+      <g>
+        <rect x="694" y="304" width="109" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="710" cy="319" r="4" fill="#3178C6"/>
+        <text x="722" y="324" font-size="12.5" fill="#0F172A">TypeScript</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.54s" fill="freeze"/>
-        <rect x="778" y="330" width="84" height="34" rx="19" fill="#06B6D4" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.4s" repeatCount="indefinite" begin="0.6s"/></rect>
-        <rect x="782" y="334" width="76" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="820" y="354" text-anchor="middle">FastAPI</text>
+      <g>
+        <rect x="811" y="304" width="69" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="827" cy="319" r="4" fill="#4EAA25"/>
+        <text x="839" y="324" font-size="12.5" fill="#0F172A">Bash</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.62s" fill="freeze"/>
-        <rect x="864" y="330" width="84" height="34" rx="19" fill="#2563EB" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3s" repeatCount="indefinite" begin="0.8s"/></rect>
-        <rect x="868" y="334" width="76" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="906" y="354" text-anchor="middle">Next.js</text>
+    <text x="524" y="354" font-size="10" letter-spacing="2" fill="#475569">BACKEND &amp; INFRA</text>
+      <g>
+        <rect x="520" y="362" width="89" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="536" cy="377" r="4" fill="#05998B"/>
+        <text x="548" y="382" font-size="12.5" fill="#0F172A">FastAPI</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.70s" fill="freeze"/>
-        <rect x="950" y="330" width="104" height="34" rx="19" fill="#06B6D4" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.6s" repeatCount="indefinite" begin="1.0s"/></rect>
-        <rect x="954" y="334" width="96" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="1002" y="354" text-anchor="middle">PostgreSQL</text>
+      <g>
+        <rect x="617" y="362" width="89" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="633" cy="377" r="4" fill="#0F172A"/>
+        <text x="645" y="382" font-size="12.5" fill="#0F172A">Next.js</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.78s" fill="freeze"/>
-        <rect x="1044" y="330" width="72" height="34" rx="19" fill="#2563EB" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="2.9s" repeatCount="indefinite" begin="1.2s"/></rect>
-        <rect x="1048" y="334" width="64" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="1080" y="354" text-anchor="middle">Redis</text>
+      <g>
+        <rect x="714" y="362" width="109" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="730" cy="377" r="4" fill="#4169E1"/>
+        <text x="742" y="382" font-size="12.5" fill="#0F172A">PostgreSQL</text>
       </g>
-
-      <!-- row 2 -->
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.86s" fill="freeze"/>
-        <rect x="520" y="374" width="78" height="34" rx="19" fill="#06B6D4" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.1s" repeatCount="indefinite" begin="1.4s"/></rect>
-        <rect x="524" y="378" width="70" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="559" y="398" text-anchor="middle">Docker</text>
+      <g>
+        <rect x="831" y="362" width="76" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="847" cy="377" r="4" fill="#DC382D"/>
+        <text x="859" y="382" font-size="12.5" fill="#0F172A">Redis</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.94s" fill="freeze"/>
-        <rect x="598" y="374" width="66" height="34" rx="19" fill="#2563EB" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.3s" repeatCount="indefinite" begin="1.6s"/></rect>
-        <rect x="602" y="378" width="58" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="631" y="398" text-anchor="middle">Bash</text>
+      <g>
+        <rect x="915" y="362" width="82" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="931" cy="377" r="4" fill="#2496ED"/>
+        <text x="943" y="382" font-size="12.5" fill="#0F172A">Docker</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.02s" fill="freeze"/>
-        <rect x="664" y="374" width="104" height="34" rx="19" fill="#06B6D4" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="2.7s" repeatCount="indefinite" begin="1.8s"/></rect>
-        <rect x="668" y="378" width="96" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="716" y="398" text-anchor="middle">Kali Linux</text>
+    <text x="524" y="412" font-size="10" letter-spacing="2" fill="#475569">SECURITY &amp; REVERSING</text>
+      <g>
+        <rect x="520" y="420" width="109" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="536" cy="435" r="4" fill="#367BF0"/>
+        <text x="548" y="440" font-size="12.5" fill="#0F172A">Kali Linux</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.10s" fill="freeze"/>
-        <rect x="772" y="374" width="104" height="34" rx="19" fill="#2563EB" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3.5s" repeatCount="indefinite" begin="2.0s"/></rect>
-        <rect x="776" y="378" width="96" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="824" y="398" text-anchor="middle">Burp Suite</text>
+      <g>
+        <rect x="637" y="420" width="109" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="653" cy="435" r="4" fill="#FF6633"/>
+        <text x="665" y="440" font-size="12.5" fill="#0F172A">Burp Suite</text>
       </g>
-      <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.18s" fill="freeze"/>
-        <rect x="876" y="374" width="104" height="34" rx="19" fill="#06B6D4" opacity="0.13" filter="url(#glow)"><animate attributeName="opacity" values="0.08;0.20;0.08" dur="3s" repeatCount="indefinite" begin="2.2s"/></rect>
-        <rect x="880" y="378" width="96" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-        <text x="928" y="398" text-anchor="middle">Metasploit</text>
+      <g>
+        <rect x="754" y="420" width="102" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="770" cy="435" r="4" fill="#1679A7"/>
+        <text x="782" y="440" font-size="12.5" fill="#0F172A">Wireshark</text>
       </g>
-    </g>
-
-    <!-- social: real GitHub mark -->
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.4s" fill="freeze"/>
-      <rect x="516" y="430" width="216" height="42" rx="21" fill="#2563EB" opacity="0.10" filter="url(#glow)"><animate attributeName="opacity" values="0.06;0.16;0.06" dur="3.5s" repeatCount="indefinite"/></rect>
-      <rect x="520" y="434" width="208" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.85" stroke="#2563EB" stroke-opacity="0.35"/>
-      <g transform="translate(536,443) scale(0.667)" fill="#0F172A">
-        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+      <g>
+        <rect x="864" y="420" width="82" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="880" cy="435" r="4" fill="#FF6E00"/>
+        <text x="892" y="440" font-size="12.5" fill="#0F172A">Ghidra</text>
       </g>
-      <text x="568" y="456" font-size="14" fill="#0F172A">github.com/rootlinux</text>
+      <g>
+        <rect x="520" y="464" width="122" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="536" cy="479" r="4" fill="#A42E2B"/>
+        <text x="548" y="484" font-size="12.5" fill="#0F172A">gdb / pwndbg</text>
+      </g>
+      <g>
+        <rect x="650" y="464" width="109" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="666" cy="479" r="4" fill="#2596CD"/>
+        <text x="678" y="484" font-size="12.5" fill="#0F172A">Metasploit</text>
+      </g>
+      <g>
+        <rect x="767" y="464" width="142" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="783" cy="479" r="4" fill="#3A76F0"/>
+        <text x="795" y="484" font-size="12.5" fill="#0F172A">Signal Protocol</text>
+      </g>
+      <g>
+        <rect x="917" y="464" width="96" height="30" rx="15" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+        <circle cx="933" cy="479" r="4" fill="#6C4BB6"/>
+        <text x="945" y="484" font-size="12.5" fill="#0F172A">WebAuthn</text>
+      </g>
+    <g>
+      <rect x="520" y="514" width="208" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.9" stroke="#2563EB" stroke-opacity="0.3"/>
+      <g transform="translate(536,523) scale(0.667)" fill="#0F172A"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></g>
+      <text x="568" y="536" font-size="14" fill="#0F172A">github.com/rootlinux</text>
     </g>
   </g>
 </svg>
