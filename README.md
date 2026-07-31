@@ -6,10 +6,6 @@
   <img alt="Berke (rootlinux) - Computer Engineering student, offensive security and red team, based in Istanbul" src="light.svg">
 </picture>
 
-# rootlinux
-
-**Computer Engineering Student · Security Engineering → Red Team**
-
 </div>
 
 ## About
@@ -22,12 +18,6 @@ Computer engineering student on a deliberate path toward Red Team / Pentest capa
 
 ## Current Work
 
-| Project | What it is | Security angle |
-|---------|-----------|----------------|
-| [nexus](https://github.com/rootlinux/nexus) | Full-stack invite-only social platform (FastAPI + Next.js) | WebAuthn, MFA enforcement, session hardening, rate limiting, 40+ security-focused tests |
+**[nexus](https://github.com/rootlinux/nexus)** — invite-only social platform, FastAPI + Next.js + PostgreSQL + Redis
 
-<div align="center">
-
-*Building real competence, not surface-level motivation.*
-
-</div>
+WebAuthn, MFA enforcement, session hardening, rate limiting, 40+ security-focused tests
