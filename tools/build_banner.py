@@ -119,10 +119,16 @@ AMBER = {                                    # row index -> amber glyphs
 
 # --- themes ------------------------------------------------------------------
 
+# Tux's own colours: a black-and-white body with an amber beak and feet, on a
+# terminal-black card. "tux" is the two stops of the body gradient and is kept
+# separate from "accent" so the body can stay Tux-coloured while the interface
+# takes the amber.
 DARK = dict(
     name="dark",
-    card="#030712", panel="#0F172A", text="#F8FAFC", muted="#94A3B8",
-    accent="#22D3EE", accent2="#7C3AED", amber="#FBBF24",
+    card="#0A0A0C", panel="#141418", text="#F5F5F7", muted="#8B8B94",
+    accent="#FCBF49", accent2="#F5843C", amber="#FCBF49",
+    blobs=("#F5843C", "#FCBF49", "#B45309"),
+    tux=("#FFFFFF", "#9CA3AF"),          # white -> grey, readable on black
     left_panel=("#ffffff", "0.02"), border=("#ffffff", "0.08"),
     hairline=("#ffffff", "0.06"), pill=("#ffffff", "0.04"),
     titlebar=("#ffffff", "0.02"), glass="0.06",
@@ -131,12 +137,14 @@ DARK = dict(
 )
 LIGHT = dict(
     name="light",
-    card="#FFFFFF", panel="#F8FAFC", text="#0F172A", muted="#475569",
-    accent="#2563EB", accent2="#06B6D4", amber="#F59E0B",
-    left_panel=("#F8FAFC", "0.7"), border=("#0F172A", "0.10"),
-    hairline=("#0F172A", "0.08"), pill=("#FFFFFF", "0.9"),
-    titlebar=("#0F172A", "0.025"), glass="0.75",
-    shimmer=("#2563EB", "0.40"), scanline="0.05", blob=0.53,
+    card="#FFFFFF", panel="#FAFAFA", text="#18181B", muted="#52525B",
+    accent="#B45309", accent2="#EA580C", amber="#C2740B",
+    blobs=("#FBBF24", "#FB923C", "#FDE68A"),
+    tux=("#3F3F46", "#18181B"),          # dark body on white, as Tux is drawn
+    left_panel=("#FAFAFA", "0.7"), border=("#18181B", "0.10"),
+    hairline=("#18181B", "0.08"), pill=("#FFFFFF", "0.9"),
+    titlebar=("#18181B", "0.025"), glass="0.75",
+    shimmer=("#B45309", "0.40"), scanline="0.05", blob=0.34,
     noise="0 0 0 0 0.06  0 0 0 0 0.09  0 0 0 0 0.16  0 0 0 0.035 0",
 )
 
@@ -179,8 +187,9 @@ def build(t):
       'stitchTiles="stitch" result="noise"/>')
     w(f'      <feColorMatrix in="noise" type="matrix" values="{t["noise"]}"/>')
     w('    </filter>')
+    tux1, tux2 = t["tux"]
     w('    <linearGradient id="tuxGradient" gradientUnits="userSpaceOnUse" x1="120" y1="0" x2="380" y2="0">')
-    for off, c in (("0%", t["accent"]), ("50%", t["accent2"]), ("100%", t["accent"])):
+    for off, c in (("0%", tux1), ("50%", tux2), ("100%", tux1)):
         w(f'      <stop offset="{off}" stop-color="{c}"/>')
     w('      <animateTransform attributeName="gradientTransform" type="translate" '
       'values="-130 0;130 0;-130 0" dur="7s" repeatCount="indefinite"/>')
@@ -196,8 +205,9 @@ def build(t):
     w(f'      <stop offset="0%" stop-color="#ffffff" stop-opacity="{t["glass"]}"/>')
     w('      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>')
     w('    </linearGradient>')
-    for gid, colour, peak in (("blobBlue", "#3B82F6", 0.30), ("blobAccent2", t["accent2"], 0.28),
-                              ("blobEmerald", "#10B981", 0.22), ("blobAccent", t["accent"], 0.30)):
+    b1, b2, b3 = t["blobs"]
+    for gid, colour, peak in (("blob1", b1, 0.30), ("blob2", b2, 0.28),
+                              ("blob3", b3, 0.22), ("blobAccent", t["accent"], 0.30)):
         w(f'    <radialGradient id="{gid}" cx="50%" cy="50%" r="50%">')
         w(f'      <stop offset="0%" stop-color="{colour}" stop-opacity="{blob(t, colour, peak)}"/>')
         w(f'      <stop offset="100%" stop-color="{colour}" stop-opacity="0"/>')
@@ -209,9 +219,9 @@ def build(t):
     w(f'  <rect x="0" y="0" width="{W}" height="{H}" rx="28" fill="{t["card"]}"/>')
     w('  <g clip-path="url(#cardClip)">')
     for cx, cy, r, gid, vals, dur in (
-        (150, 150, 180, "blobBlue", "0,0;30,20;-10,25;0,0", 18),
-        (1000, 480, 200, "blobAccent2", "0,0;-25,-15;15,-30;0,0", 22),
-        (600, 550, 150, "blobEmerald", "0,0;20,-10;-15,10;0,0", 16),
+        (150, 150, 180, "blob1", "0,0;30,20;-10,25;0,0", 18),
+        (1000, 480, 200, "blob2", "0,0;-25,-15;15,-30;0,0", 22),
+        (600, 550, 150, "blob3", "0,0;20,-10;-15,10;0,0", 16),
     ):
         w(f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#{gid})">'
           f'<animateTransform attributeName="transform" type="translate" '
@@ -248,7 +258,7 @@ def build(t):
     w('  </g>')
     w(f'  <rect x="24" y="24" width="448" height="562" rx="20" fill="none" '
       f'stroke="{hc}" stroke-opacity="{ho}"/>')
-    for cx, gid, delay in ((230, "blobAccent", "0s"), (266, "blobAccent2", "0.5s")):
+    for cx, gid, delay in ((230, "blobAccent", "0s"), (266, "blob2", "0.5s")):
         w(f'  <circle cx="{cx}" cy="320" r="150" fill="url(#{gid})">'
           f'<animate attributeName="opacity" values="0.7;1;0.7" dur="5s" '
           f'repeatCount="indefinite" begin="{delay}"/></circle>')
