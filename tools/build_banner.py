@@ -112,10 +112,22 @@ TUX = [
 AMBER = {                                    # row index -> amber glyphs
      8: "            ooooooo            ",   # beak
      9: "             ooooo             ",
-    24: "%%%%                      %%%%",    # feet, splaying outward
-    25: "%%%%%%%                %%%%%%%",
+    24: "%%%%                       %%%%",   # feet, splaying outward
+    25: "%%%%%%%                 %%%%%%%",
     26: "%%%%%%%%               %%%%%%%%",
 }
+
+# Every glyph row is centred on its own width, so a row of the wrong length
+# silently shifts by half a character against the rest. Catch it here.
+GRID = len(TUX[0])
+for _i, _row in enumerate(TUX):
+    if len(_row) != GRID:
+        raise SystemExit(f"TUX row {_i} is {len(_row)} chars, expected {GRID}")
+for _i, _row in AMBER.items():
+    if len(_row) != GRID:
+        raise SystemExit(f"AMBER row {_i} is {len(_row)} chars, expected {GRID}")
+    if not 0 <= _i < len(TUX):
+        raise SystemExit(f"AMBER row {_i} has no matching TUX row")
 
 # --- themes ------------------------------------------------------------------
 
@@ -158,7 +170,8 @@ PILL_H, PILL_GAP, DOT_X, LABEL_X, PAD_R, CHAR_W = 30, 8, 16, 28, 14, 6.7
 PANEL_R = 1132          # right edge available to the terminal panel's content
 
 
-def blob(t, colour, peak):
+def blob(t, peak):
+    """Scale a blob's peak opacity by the theme's overall blob strength."""
     return round(peak * t["blob"], 3)
 
 
@@ -209,7 +222,7 @@ def build(t):
     for gid, colour, peak in (("blob1", b1, 0.30), ("blob2", b2, 0.28),
                               ("blob3", b3, 0.22), ("blobAccent", t["accent"], 0.30)):
         w(f'    <radialGradient id="{gid}" cx="50%" cy="50%" r="50%">')
-        w(f'      <stop offset="0%" stop-color="{colour}" stop-opacity="{blob(t, colour, peak)}"/>')
+        w(f'      <stop offset="0%" stop-color="{colour}" stop-opacity="{blob(t, peak)}"/>')
         w(f'      <stop offset="100%" stop-color="{colour}" stop-opacity="0"/>')
         w('    </radialGradient>')
     w('  </defs>')
