@@ -1,5 +1,11 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg">
+  <img alt="Berke (rootlinux) - Computer Engineering student, offensive security and red team, based in Istanbul" src="light.svg">
+</picture>
+
 # rootlinux
 
 **Computer Engineering Student · Security Engineering → Red Team**
