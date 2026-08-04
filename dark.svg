@@ -1,5 +1,5 @@
 <svg width="1180" height="610" viewBox="0 0 1180 610" xmlns="http://www.w3.org/2000/svg">
-  <title>Berke (rootlinux) - Computer Engineering student, offensive security and red team, building iceq</title>
+  <title>Berke (rootlinux) - Computer Engineering student, offensive security and red team, author of IceQ</title>
   <defs>
     <clipPath id="cardClip"><rect x="1" y="1" width="1178" height="608" rx="28"/></clipPath>
     <clipPath id="leftClip"><rect x="24" y="24" width="448" height="562" rx="20"/></clipPath>
@@ -143,7 +143,7 @@
       <g transform="translate(524,204)" stroke="#FCBF49" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 5.8 8 2.8l6.5 3L8 8.8 1.5 5.8z"/><path d="M4.2 7.2v3.6c0 1.1 1.7 1.9 3.8 1.9s3.8-.8 3.8-1.9V7.2"/></g>
       <text x="550" y="216">Computer Engineering</text>
       <g transform="translate(524,230)" stroke="#FCBF49" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5.8"/><circle cx="8" cy="8" r="1.9"/></g>
-      <text x="550" y="242">Building iceq &#8212; E2EE messenger w/ panic-wipe security</text>
+      <text x="550" y="242">IceQ shipped &#8212; self-hostable E2EE messenger</text>
       <g transform="translate(524,256)" stroke="#FCBF49" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="1.6" y="3.6" width="12.8" height="9.2" rx="1.8"/><path d="M2.2 4.8 8 9l5.8-4.2"/></g>
       <text x="550" y="268">berkeesahin@proton.me</text>
     </g>
@@ -151,8 +151,9 @@
     <text x="524" y="296" font-size="10" letter-spacing="2" fill="#8B8B94">LANGUAGES</text>
       <g><rect x="520" y="304" width="82" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="536" cy="319" r="4" fill="#3776AB"/><text x="548" y="324" font-size="12.5" fill="#F5F5F7">Python</text></g>
       <g><rect x="610" y="304" width="76" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="626" cy="319" r="4" fill="#00599C"/><text x="638" y="324" font-size="12.5" fill="#F5F5F7">C/C++</text></g>
-      <g><rect x="694" y="304" width="109" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="710" cy="319" r="4" fill="#3178C6"/><text x="722" y="324" font-size="12.5" fill="#F5F5F7">TypeScript</text></g>
-      <g><rect x="811" y="304" width="69" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="827" cy="319" r="4" fill="#4EAA25"/><text x="839" y="324" font-size="12.5" fill="#F5F5F7">Bash</text></g>
+      <g><rect x="694" y="304" width="55" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="710" cy="319" r="4" fill="#00ADD8"/><text x="722" y="324" font-size="12.5" fill="#F5F5F7">Go</text></g>
+      <g><rect x="757" y="304" width="109" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="773" cy="319" r="4" fill="#3178C6"/><text x="785" y="324" font-size="12.5" fill="#F5F5F7">TypeScript</text></g>
+      <g><rect x="874" y="304" width="69" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="890" cy="319" r="4" fill="#4EAA25"/><text x="902" y="324" font-size="12.5" fill="#F5F5F7">Bash</text></g>
     <text x="524" y="354" font-size="10" letter-spacing="2" fill="#8B8B94">BACKEND &amp; INFRA</text>
       <g><rect x="520" y="362" width="89" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="536" cy="377" r="4" fill="#05998B"/><text x="548" y="382" font-size="12.5" fill="#F5F5F7">FastAPI</text></g>
       <g><rect x="617" y="362" width="89" height="30" rx="15" fill="#ffffff" fill-opacity="0.04" stroke="#FCBF49" stroke-opacity="0.3"/><circle cx="633" cy="377" r="4" fill="#F5F5F7"/><text x="645" y="382" font-size="12.5" fill="#F5F5F7">Next.js</text></g>

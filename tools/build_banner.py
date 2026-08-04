@@ -52,7 +52,7 @@ META = [
      '<path d="M4.2 7.2v3.6c0 1.1 1.7 1.9 3.8 1.9s3.8-.8 3.8-1.9V7.2"/>',
      "Computer Engineering"),
     ('<circle cx="8" cy="8" r="5.8"/><circle cx="8" cy="8" r="1.9"/>',
-     "Building iceq &#8212; E2EE messenger w/ panic-wipe security"),
+     "IceQ shipped &#8212; self-hostable E2EE messenger"),
     ('<rect x="1.6" y="3.6" width="12.8" height="9.2" rx="1.8"/>'
      '<path d="M2.2 4.8 8 9l5.8-4.2"/>', "berkeesahin@proton.me"),
 ]
@@ -61,7 +61,7 @@ META = [
 # primary text colour", so Next.js reads white on dark and near-black on light.
 SKILLS = [
     ("LANGUAGES", [
-        [("Python", "#3776AB"), ("C/C++", "#00599C"),
+        [("Python", "#3776AB"), ("C/C++", "#00599C"), ("Go", "#00ADD8"),
          ("TypeScript", "#3178C6"), ("Bash", "#4EAA25")],
     ]),
     ("BACKEND &amp; INFRA", [
@@ -183,7 +183,7 @@ def build(t):
     w(f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
       f'xmlns="http://www.w3.org/2000/svg">')
     w(f'  <title>{NAME} ({HANDLE}) - Computer Engineering student, offensive '
-      f'security and red team, building iceq</title>')
+      f'security and red team, author of IceQ</title>')
 
     # -- defs --
     w('  <defs>')
